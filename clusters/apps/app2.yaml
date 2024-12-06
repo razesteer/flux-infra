@@ -14,5 +14,5 @@ spec:
         name: app-helm
         namespace: flux-system
       interval: 1m
-  valuesFiles:
-    - values/app2.yaml
+      valuesFiles:
+      - values/app2.yaml
