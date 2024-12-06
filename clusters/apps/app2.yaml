@@ -16,6 +16,6 @@ spec:
       interval: 1m
       valuesFiles:
         sourceRef:
-          kind: GitRepository
-          name: play
-          file:  .helm/app/values.yaml
+        - kind: GitRepository
+          name: app-helm
+          file:  ./values/app2.yaml
