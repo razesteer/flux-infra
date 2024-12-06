@@ -3,8 +3,8 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
-- ../apps/app1.yaml
-- ../apps/app2.yaml
-- ../apps/app-helm-gitrepo.yaml
-- ../namespaces/dev.yaml
+- ../../apps/app1.yaml
+- ../../apps/app2.yaml
+- ../../apps/app-helm-gitrepo.yaml
+- ../../namespaces/dev.yaml
 
