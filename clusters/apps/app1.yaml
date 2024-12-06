@@ -9,6 +9,7 @@ spec:
   chart:
     spec:
       chart: ./
+      ignoreFile: ./values/app1.yaml
       sourceRef:
         kind: GitRepository
         name: app-helm
