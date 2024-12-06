@@ -14,6 +14,20 @@ spec:
         name: app-helm
         namespace: flux-system
       interval: 1m
-      valuesFiles:
-        - values/app1.yaml
+      # valuesFiles:
+      #   - values/app1.yaml
+  values:
+    replicaCount: 1
+    app:
+      name: app1  # Change this to the name of your application
+    image:
+      repository: ghcr.io/razesteer/app1
+      tag: latest
+    service:
+      port: 5000  # Change this to your desired service port
+      type: LoadBalancer  # This makes the service accessible through a Load Balancer
+    ingress:
+      enabled: true  # Set to false to disable Ingress
+      host: example.com  # Specify the host for the Ingress
+      path: /  #   
       
