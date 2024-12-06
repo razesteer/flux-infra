@@ -1,7 +1,7 @@
 piVersion: source.toolkit.fluxcd.io/v1beta2
 kind: GitRepository
 metadata:
-  name: application-helm
+  name: app-helm
   namespace: flux-system
 spec:
   interval: 1m
@@ -22,4 +22,4 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: application-helm
+    name: app-helm
