@@ -15,9 +15,6 @@ spec:
         namespace: flux-system
       interval: 1m
       valuesFiles:
-        sourceRef:
-        - kind: GitRepository
-          name: app-helm
-          file:  ./values/app1.yaml
+        - values/app1.yaml
   
     
