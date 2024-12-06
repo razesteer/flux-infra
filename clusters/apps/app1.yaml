@@ -10,7 +10,7 @@ spec:
     spec:
       chart: ./
       ignore: |
-        !/values/  
+        /values/  
       sourceRef:
         kind: GitRepository
         name: app-helm
