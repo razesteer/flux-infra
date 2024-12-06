@@ -14,6 +14,7 @@ spec:
         name: app-helm
         namespace: flux-system
       interval: 1m
+      reconcileStrategy: Revision
       valuesFiles:
         - values/app1.yaml
   
