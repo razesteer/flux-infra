@@ -16,4 +16,4 @@ spec:
       interval: 1m
       reconcileStrategy: Revision
       valuesFiles:
-        - values/app2.yaml
+        - values/dev/app2.yaml
