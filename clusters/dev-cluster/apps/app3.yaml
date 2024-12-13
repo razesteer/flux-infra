@@ -1,0 +1,24 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: app3
+  namespace: dev
+spec:
+  releaseName: app3
+  interval: 1m
+  chart:
+    spec:
+      chart: ./
+      sourceRef:
+        kind: GitRepository
+        name: app-helm
+        namespace: flux-system
+      interval: 1m
+      #reconcileStrategy: Revision
+      # valuesFiles:
+      #   - values/dev/app2.yaml
+  valuesFrom:
+    - kind: GitRepository
+      name: app3-values
+      namespace: flux-system
+      valuesKey: values/dev/app3.yaml

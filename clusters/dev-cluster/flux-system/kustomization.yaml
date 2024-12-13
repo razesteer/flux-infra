@@ -5,6 +5,7 @@ resources:
 - gotk-sync.yaml
 - ../apps/app1.yaml
 - ../apps/app2.yaml
+- ../apps/app3.yaml
 - ../apps/app-helm-gitrepo.yaml
 - ../namespaces/dev.yaml
 
